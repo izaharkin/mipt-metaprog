@@ -213,6 +213,7 @@ public:
 	}
 
 	~Reader() {
+		delete curr_ptr_;
 		infile_.close();
 	}
 
